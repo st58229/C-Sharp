@@ -8,10 +8,10 @@ namespace Cshrp_CV01
         {
             //A();
             //B();
-            //C();
+            C();
             //Console.WriteLine(C1());
             //Console.WriteLine(C2());
-            D();
+            //D();
         }
 
         static void A()
@@ -36,7 +36,7 @@ namespace Cshrp_CV01
             string y = input.Substring(0, 2);
             string d = input.Substring(2, 4);      
             string m = (Convert.ToInt32(input.Substring(2, 2)) > 50 ? Convert.ToInt32(input.Substring(2, 2)) - 50 : Convert.ToInt32(input.Substring(2, 2))).ToString();
-            bool w = Convert.ToInt32(input.Substring(2, 2)) > 50 ? true : false;
+            bool w = Convert.ToInt32(input.Substring(2, 2)) > 50;
 
             if (w) Console.WriteLine("Jedná se o rodné číslo ženy.");
             else Console.WriteLine("Jedná se o rodné číslo muže."); 
@@ -48,7 +48,7 @@ namespace Cshrp_CV01
             Console.WriteLine("Zadejte rodné číslo:");
             input = Console.ReadLine();
 
-            bool w = Convert.ToInt32(input.Substring(2, 2)) > 50 ? true : false;
+            bool w = Convert.ToInt32(input.Substring(2, 2)) > 50;
 
             if (w) Console.WriteLine("Jedná se o rodné číslo ženy.");
             else Console.WriteLine("Jedná se o rodné číslo muže.");
@@ -62,7 +62,7 @@ namespace Cshrp_CV01
             Console.WriteLine("Zadejte rodné číslo:");
             input = Console.ReadLine();
 
-            bool w = Convert.ToInt32(input.Substring(2, 2)) > 50 ? true : false;
+            bool w = Convert.ToInt32(input.Substring(2, 2)) > 50;
 
             if (w) Console.WriteLine("Jedná se o rodné číslo ženy.");
             else Console.WriteLine("Jedná se o rodné číslo muže.");
