@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cshrp_Semestralni_prace", "Cshrp_Semestralni_prace\Cshrp_Semestralni_prace.csproj", "{B314A74C-B755-4F25-B7A3-908671D61D0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B314A74C-B755-4F25-B7A3-908671D61D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B314A74C-B755-4F25-B7A3-908671D61D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B314A74C-B755-4F25-B7A3-908671D61D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B314A74C-B755-4F25-B7A3-908671D61D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB63F05A-834A-4A4B-A1B0-E2D0EF840B44}
+	EndGlobalSection
+EndGlobal
