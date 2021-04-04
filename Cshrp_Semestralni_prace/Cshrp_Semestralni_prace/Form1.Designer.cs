@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.BackButton_left = new System.Windows.Forms.Button();
             this.listView_left = new System.Windows.Forms.ListView();
+            this.iconList = new System.Windows.Forms.ImageList(this.components);
             this.PathtextBox_left = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,12 +40,12 @@
             this.GoButton_left = new System.Windows.Forms.Button();
             this.DetailsBox_left = new System.Windows.Forms.RichTextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.DetailsBox_right = new System.Windows.Forms.RichTextBox();
             this.GoButton_right = new System.Windows.Forms.Button();
             this.PathtextBox_right = new System.Windows.Forms.TextBox();
             this.listView_right = new System.Windows.Forms.ListView();
             this.BackButton_right = new System.Windows.Forms.Button();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -53,7 +54,14 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.iconList = new System.Windows.Forms.ImageList(this.components);
+            this.btnRemove_left = new System.Windows.Forms.Button();
+            this.btnRename_left = new System.Windows.Forms.Button();
+            this.btnRename_right = new System.Windows.Forms.Button();
+            this.btnRemove_right = new System.Windows.Forms.Button();
+            this.btnMove_left = new System.Windows.Forms.Button();
+            this.btnCopy_left = new System.Windows.Forms.Button();
+            this.btnCopy_right = new System.Windows.Forms.Button();
+            this.btnMove_right = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -80,6 +88,12 @@
             this.listView_left.UseCompatibleStateImageBehavior = false;
             this.listView_left.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.listView_left_ItemSelectionChanged);
             this.listView_left.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView_left_MouseDoubleClick);
+            // 
+            // iconList
+            // 
+            this.iconList.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.iconList.ImageSize = new System.Drawing.Size(16, 16);
+            this.iconList.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // PathtextBox_left
             // 
@@ -124,9 +138,9 @@
             // 
             // DetailsBox_left
             // 
-            this.DetailsBox_left.Location = new System.Drawing.Point(12, 476);
+            this.DetailsBox_left.Location = new System.Drawing.Point(12, 503);
             this.DetailsBox_left.Name = "DetailsBox_left";
-            this.DetailsBox_left.Size = new System.Drawing.Size(544, 235);
+            this.DetailsBox_left.Size = new System.Drawing.Size(544, 208);
             this.DetailsBox_left.TabIndex = 5;
             this.DetailsBox_left.Text = "";
             // 
@@ -141,11 +155,20 @@
             this.toolStrip1.TabIndex = 6;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
             // DetailsBox_right
             // 
-            this.DetailsBox_right.Location = new System.Drawing.Point(649, 476);
+            this.DetailsBox_right.Location = new System.Drawing.Point(649, 503);
             this.DetailsBox_right.Name = "DetailsBox_right";
-            this.DetailsBox_right.Size = new System.Drawing.Size(544, 235);
+            this.DetailsBox_right.Size = new System.Drawing.Size(544, 208);
             this.DetailsBox_right.TabIndex = 11;
             this.DetailsBox_right.Text = "";
             // 
@@ -157,6 +180,7 @@
             this.GoButton_right.TabIndex = 10;
             this.GoButton_right.Text = "Go";
             this.GoButton_right.UseVisualStyleBackColor = true;
+            this.GoButton_right.Click += new System.EventHandler(this.GoButton_right_Click);
             // 
             // PathtextBox_right
             // 
@@ -176,8 +200,8 @@
             this.listView_right.SmallImageList = this.iconList;
             this.listView_right.TabIndex = 8;
             this.listView_right.UseCompatibleStateImageBehavior = false;
-            this.listView_right.View = System.Windows.Forms.View.Details;
             this.listView_right.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.listView_right_ItemSelectionChanged);
+            this.listView_right.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView_right_MouseDoubleClick);
             // 
             // BackButton_right
             // 
@@ -187,15 +211,7 @@
             this.BackButton_right.TabIndex = 7;
             this.BackButton_right.Text = "Back";
             this.BackButton_right.UseVisualStyleBackColor = true;
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.BackButton_right.Click += new System.EventHandler(this.BackButton_right_Click);
             // 
             // button1
             // 
@@ -203,7 +219,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 23);
             this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
+            this.button1.Text = "Remove left";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -212,7 +228,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(81, 23);
             this.button2.TabIndex = 13;
-            this.button2.Text = "button2";
+            this.button2.Text = "Remove right";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -221,7 +237,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(81, 23);
             this.button3.TabIndex = 15;
-            this.button3.Text = "button3";
+            this.button3.Text = "Copy to <";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -230,7 +246,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(81, 23);
             this.button4.TabIndex = 14;
-            this.button4.Text = "button4";
+            this.button4.Text = "Copy to >";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -269,17 +285,99 @@
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // iconList
+            // btnRemove_left
             // 
-            this.iconList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.iconList.ImageSize = new System.Drawing.Size(16, 16);
-            this.iconList.TransparentColor = System.Drawing.Color.Transparent;
+            this.btnRemove_left.Location = new System.Drawing.Point(12, 474);
+            this.btnRemove_left.Name = "btnRemove_left";
+            this.btnRemove_left.Size = new System.Drawing.Size(81, 23);
+            this.btnRemove_left.TabIndex = 20;
+            this.btnRemove_left.Text = "Remove";
+            this.btnRemove_left.UseVisualStyleBackColor = true;
+            this.btnRemove_left.Click += new System.EventHandler(this.btnRemove_left_Click);
+            // 
+            // btnRename_left
+            // 
+            this.btnRename_left.Location = new System.Drawing.Point(99, 474);
+            this.btnRename_left.Name = "btnRename_left";
+            this.btnRename_left.Size = new System.Drawing.Size(81, 23);
+            this.btnRename_left.TabIndex = 21;
+            this.btnRename_left.Text = "Rename";
+            this.btnRename_left.UseVisualStyleBackColor = true;
+            this.btnRename_left.Click += new System.EventHandler(this.btnRename_left_Click);
+            // 
+            // btnRename_right
+            // 
+            this.btnRename_right.Location = new System.Drawing.Point(736, 474);
+            this.btnRename_right.Name = "btnRename_right";
+            this.btnRename_right.Size = new System.Drawing.Size(81, 23);
+            this.btnRename_right.TabIndex = 23;
+            this.btnRename_right.Text = "Rename";
+            this.btnRename_right.UseVisualStyleBackColor = true;
+            this.btnRename_right.Click += new System.EventHandler(this.btnRename_right_Click);
+            // 
+            // btnRemove_right
+            // 
+            this.btnRemove_right.Location = new System.Drawing.Point(649, 474);
+            this.btnRemove_right.Name = "btnRemove_right";
+            this.btnRemove_right.Size = new System.Drawing.Size(81, 23);
+            this.btnRemove_right.TabIndex = 22;
+            this.btnRemove_right.Text = "Remove";
+            this.btnRemove_right.UseVisualStyleBackColor = true;
+            this.btnRemove_right.Click += new System.EventHandler(this.btnRemove_right_Click);
+            // 
+            // btnMove_left
+            // 
+            this.btnMove_left.Location = new System.Drawing.Point(186, 474);
+            this.btnMove_left.Name = "btnMove_left";
+            this.btnMove_left.Size = new System.Drawing.Size(81, 23);
+            this.btnMove_left.TabIndex = 24;
+            this.btnMove_left.Text = "Move";
+            this.btnMove_left.UseVisualStyleBackColor = true;
+            this.btnMove_left.Click += new System.EventHandler(this.btnMove_left_Click);
+            // 
+            // btnCopy_left
+            // 
+            this.btnCopy_left.Location = new System.Drawing.Point(273, 474);
+            this.btnCopy_left.Name = "btnCopy_left";
+            this.btnCopy_left.Size = new System.Drawing.Size(81, 23);
+            this.btnCopy_left.TabIndex = 25;
+            this.btnCopy_left.Text = "Copy";
+            this.btnCopy_left.UseVisualStyleBackColor = true;
+            this.btnCopy_left.Click += new System.EventHandler(this.btnCopy_left_Click);
+            // 
+            // btnCopy_right
+            // 
+            this.btnCopy_right.Location = new System.Drawing.Point(910, 474);
+            this.btnCopy_right.Name = "btnCopy_right";
+            this.btnCopy_right.Size = new System.Drawing.Size(81, 23);
+            this.btnCopy_right.TabIndex = 27;
+            this.btnCopy_right.Text = "Copy";
+            this.btnCopy_right.UseVisualStyleBackColor = true;
+            this.btnCopy_right.Click += new System.EventHandler(this.btnCopy_right_Click);
+            // 
+            // btnMove_right
+            // 
+            this.btnMove_right.Location = new System.Drawing.Point(823, 474);
+            this.btnMove_right.Name = "btnMove_right";
+            this.btnMove_right.Size = new System.Drawing.Size(81, 23);
+            this.btnMove_right.TabIndex = 26;
+            this.btnMove_right.Text = "Move";
+            this.btnMove_right.UseVisualStyleBackColor = true;
+            this.btnMove_right.Click += new System.EventHandler(this.btnMove_right_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1205, 739);
+            this.Controls.Add(this.btnCopy_right);
+            this.Controls.Add(this.btnMove_right);
+            this.Controls.Add(this.btnCopy_left);
+            this.Controls.Add(this.btnMove_left);
+            this.Controls.Add(this.btnRename_right);
+            this.Controls.Add(this.btnRemove_right);
+            this.Controls.Add(this.btnRename_left);
+            this.Controls.Add(this.btnRemove_left);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button7);
@@ -338,6 +436,14 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnRemove_left;
+        private System.Windows.Forms.Button btnRename_left;
+        private System.Windows.Forms.Button btnRename_right;
+        private System.Windows.Forms.Button btnRemove_right;
+        private System.Windows.Forms.Button btnMove_left;
+        private System.Windows.Forms.Button btnCopy_left;
+        private System.Windows.Forms.Button btnCopy_right;
+        private System.Windows.Forms.Button btnMove_right;
         private System.Windows.Forms.ImageList iconList;
     }
 }
