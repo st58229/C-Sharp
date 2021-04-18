@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace Cshrp_Semestralni_prace
 {
+
+    // Prostě netušim jak se to chce podle zadání, nevim jak dál.
     public class Interface
     {
         public delegate void UpdatedInterfaceEventHandler(object sender, EventArgs e);
@@ -44,7 +46,7 @@ namespace Cshrp_Semestralni_prace
             OnUpdateInterfrace();
         }
 
-        public void loadDirectory(ref ListView listView, ref RichTextBox richTextBox, string path, string selectedFile, ref bool isFile, ref ImageList iconList)
+        public void loadDirectory(ListView listView, RichTextBox richTextBox, string path, string selectedFile, ref bool isFile, ref ImageList iconList)
         {
             DirectoryInfo fileList;
             string tempFilePath = "";

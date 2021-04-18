@@ -44,7 +44,6 @@
             this.DetailsBox_right = new System.Windows.Forms.RichTextBox();
             this.GoButton_right = new System.Windows.Forms.Button();
             this.PathtextBox_right = new System.Windows.Forms.TextBox();
-            this.listView_right = new System.Windows.Forms.ListView();
             this.BackButton_right = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -62,6 +61,7 @@
             this.btnCopy_left = new System.Windows.Forms.Button();
             this.btnCopy_right = new System.Windows.Forms.Button();
             this.btnMove_right = new System.Windows.Forms.Button();
+            this.listView_right = new System.Windows.Forms.ListView();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -91,9 +91,9 @@
             // 
             // iconList
             // 
-            this.iconList.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.iconList.ImageSize = new System.Drawing.Size(16, 16);
+            this.iconList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("iconList.ImageStream")));
             this.iconList.TransparentColor = System.Drawing.Color.Transparent;
+            this.iconList.Images.SetKeyName(0, "folder.png");
             // 
             // PathtextBox_left
             // 
@@ -189,19 +189,6 @@
             this.PathtextBox_right.Size = new System.Drawing.Size(448, 20);
             this.PathtextBox_right.TabIndex = 9;
             this.PathtextBox_right.TextChanged += new System.EventHandler(this.PathtextBox_right_TextChanged);
-            // 
-            // listView_right
-            // 
-            this.listView_right.HideSelection = false;
-            this.listView_right.LargeImageList = this.iconList;
-            this.listView_right.Location = new System.Drawing.Point(649, 56);
-            this.listView_right.Name = "listView_right";
-            this.listView_right.Size = new System.Drawing.Size(544, 414);
-            this.listView_right.SmallImageList = this.iconList;
-            this.listView_right.TabIndex = 8;
-            this.listView_right.UseCompatibleStateImageBehavior = false;
-            this.listView_right.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.listView_right_ItemSelectionChanged);
-            this.listView_right.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView_right_MouseDoubleClick);
             // 
             // BackButton_right
             // 
@@ -365,11 +352,25 @@
             this.btnMove_right.UseVisualStyleBackColor = true;
             this.btnMove_right.Click += new System.EventHandler(this.btnMove_right_Click);
             // 
+            // listView_right
+            // 
+            this.listView_right.HideSelection = false;
+            this.listView_right.LargeImageList = this.iconList;
+            this.listView_right.Location = new System.Drawing.Point(649, 54);
+            this.listView_right.Name = "listView_right";
+            this.listView_right.Size = new System.Drawing.Size(544, 414);
+            this.listView_right.SmallImageList = this.iconList;
+            this.listView_right.TabIndex = 28;
+            this.listView_right.UseCompatibleStateImageBehavior = false;
+            this.listView_right.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.listView_right_ItemSelectionChanged);
+            this.listView_right.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView_right_MouseDoubleClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1205, 739);
+            this.Controls.Add(this.listView_right);
             this.Controls.Add(this.btnCopy_right);
             this.Controls.Add(this.btnMove_right);
             this.Controls.Add(this.btnCopy_left);
@@ -389,7 +390,6 @@
             this.Controls.Add(this.DetailsBox_right);
             this.Controls.Add(this.GoButton_right);
             this.Controls.Add(this.PathtextBox_right);
-            this.Controls.Add(this.listView_right);
             this.Controls.Add(this.BackButton_right);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.DetailsBox_left);
@@ -425,7 +425,6 @@
         private System.Windows.Forms.RichTextBox DetailsBox_right;
         private System.Windows.Forms.Button GoButton_right;
         private System.Windows.Forms.TextBox PathtextBox_right;
-        private System.Windows.Forms.ListView listView_right;
         private System.Windows.Forms.Button BackButton_right;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.Button button1;
@@ -445,6 +444,7 @@
         private System.Windows.Forms.Button btnCopy_right;
         private System.Windows.Forms.Button btnMove_right;
         private System.Windows.Forms.ImageList iconList;
+        private System.Windows.Forms.ListView listView_right;
     }
 }
 
