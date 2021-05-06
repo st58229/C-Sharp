@@ -153,42 +153,12 @@ namespace Cshrp_Semestralni_prace
 
         private void ListBoxHistoryLeft_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            string fullPath = ((ListBox)sender).SelectedItem.ToString();
-
-            isFileLeft = false;
-
-            if (fullPath.LastIndexOf(@":\") == fullPath.Length) driveLeft = fullPath;
-            else driveLeft = fullPath.Substring(0, fullPath.IndexOf(@"\")+1);
-
-            ComboBoxDriveLeft.SelectedItem = driveLeft;
-
-            fullPathLeft = fullPath;
-
-            if (fullPath != driveLeft) pathLeft = fullPath.Substring(fullPath.IndexOf(@"\"));
-            else pathLeft = "";
-            PathtextBoxLeft.Text = pathLeft;
-
-            RefreshSide(true, false);
+            RefreshHistoryFromTab(sender);
         }
 
         private void ListBoxHistoryRight_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            string fullPath = ((ListBox)sender).SelectedItem.ToString();
-
-            isFileRight = false;
-
-            if (fullPath.LastIndexOf(@":\") == fullPath.Length) driveRight = fullPath;
-            else driveRight = fullPath.Substring(0, fullPath.IndexOf(@"\") + 1);   
-
-            ComboBoxDriveRight.SelectedItem = driveRight;
-
-            fullPathRight = fullPath;
-
-            if (fullPath != driveRight) pathRight = fullPath.Substring(fullPath.IndexOf(@"\"));
-            else pathRight = "";
-            PathtextBoxRight.Text = pathRight;
-
-            RefreshSide(false, false);
+            RefreshHistoryFromTab(sender);
         }
     }
 }

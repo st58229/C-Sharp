@@ -55,13 +55,13 @@
             this.btnMove_right = new System.Windows.Forms.Button();
             this.ComboBoxDriveRight = new System.Windows.Forms.ComboBox();
             this.ComboBoxDriveLeft = new System.Windows.Forms.ComboBox();
-            this.tabControl_detail_left = new System.Windows.Forms.TabControl();
-            this.tabPage_detail_left = new System.Windows.Forms.TabPage();
-            this.tabPage_hidtory_left = new System.Windows.Forms.TabPage();
+            this.TabControlDetailLeft = new System.Windows.Forms.TabControl();
+            this.TabPageDetailLeft = new System.Windows.Forms.TabPage();
+            this.TabPageHistoryLeft = new System.Windows.Forms.TabPage();
             this.listBoxHistoryLeft = new System.Windows.Forms.ListBox();
-            this.tabControl_detail_right = new System.Windows.Forms.TabControl();
-            this.tabPage_detail_right = new System.Windows.Forms.TabPage();
-            this.tabPage_history_right = new System.Windows.Forms.TabPage();
+            this.TabControlDetailRight = new System.Windows.Forms.TabControl();
+            this.TabPageDetailRight = new System.Windows.Forms.TabPage();
+            this.TabPageHistoryRight = new System.Windows.Forms.TabPage();
             this.listBoxHistoryRight = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
@@ -70,12 +70,12 @@
             this.CleanMenuItemLeft = new System.Windows.Forms.ToolStripMenuItem();
             this.CleanMenuItemRight = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
-            this.tabControl_detail_left.SuspendLayout();
-            this.tabPage_detail_left.SuspendLayout();
-            this.tabPage_hidtory_left.SuspendLayout();
-            this.tabControl_detail_right.SuspendLayout();
-            this.tabPage_detail_right.SuspendLayout();
-            this.tabPage_history_right.SuspendLayout();
+            this.TabControlDetailLeft.SuspendLayout();
+            this.TabPageDetailLeft.SuspendLayout();
+            this.TabPageHistoryLeft.SuspendLayout();
+            this.TabControlDetailRight.SuspendLayout();
+            this.TabPageDetailRight.SuspendLayout();
+            this.TabPageHistoryRight.SuspendLayout();
             this.SuspendLayout();
             // 
             // BackButtonLeft
@@ -307,35 +307,35 @@
             // 
             // tabControl_detail_left
             // 
-            this.tabControl_detail_left.Controls.Add(this.tabPage_detail_left);
-            this.tabControl_detail_left.Controls.Add(this.tabPage_hidtory_left);
-            this.tabControl_detail_left.Location = new System.Drawing.Point(12, 476);
-            this.tabControl_detail_left.Name = "tabControl_detail_left";
-            this.tabControl_detail_left.SelectedIndex = 0;
-            this.tabControl_detail_left.Size = new System.Drawing.Size(544, 181);
-            this.tabControl_detail_left.TabIndex = 30;
+            this.TabControlDetailLeft.Controls.Add(this.TabPageDetailLeft);
+            this.TabControlDetailLeft.Controls.Add(this.TabPageHistoryLeft);
+            this.TabControlDetailLeft.Location = new System.Drawing.Point(12, 476);
+            this.TabControlDetailLeft.Name = "tabControl_detail_left";
+            this.TabControlDetailLeft.SelectedIndex = 0;
+            this.TabControlDetailLeft.Size = new System.Drawing.Size(544, 181);
+            this.TabControlDetailLeft.TabIndex = 30;
             // 
             // tabPage_detail_left
             // 
-            this.tabPage_detail_left.Controls.Add(this.DetailsBoxLeft);
-            this.tabPage_detail_left.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_detail_left.Name = "tabPage_detail_left";
-            this.tabPage_detail_left.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_detail_left.Size = new System.Drawing.Size(536, 155);
-            this.tabPage_detail_left.TabIndex = 0;
-            this.tabPage_detail_left.Text = "Detail";
-            this.tabPage_detail_left.UseVisualStyleBackColor = true;
+            this.TabPageDetailLeft.Controls.Add(this.DetailsBoxLeft);
+            this.TabPageDetailLeft.Location = new System.Drawing.Point(4, 22);
+            this.TabPageDetailLeft.Name = "tabPage_detail_left";
+            this.TabPageDetailLeft.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPageDetailLeft.Size = new System.Drawing.Size(536, 155);
+            this.TabPageDetailLeft.TabIndex = 0;
+            this.TabPageDetailLeft.Text = "Detail";
+            this.TabPageDetailLeft.UseVisualStyleBackColor = true;
             // 
             // tabPage_hidtory_left
             // 
-            this.tabPage_hidtory_left.Controls.Add(this.listBoxHistoryLeft);
-            this.tabPage_hidtory_left.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_hidtory_left.Name = "tabPage_hidtory_left";
-            this.tabPage_hidtory_left.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_hidtory_left.Size = new System.Drawing.Size(536, 155);
-            this.tabPage_hidtory_left.TabIndex = 1;
-            this.tabPage_hidtory_left.Text = "History";
-            this.tabPage_hidtory_left.UseVisualStyleBackColor = true;
+            this.TabPageHistoryLeft.Controls.Add(this.listBoxHistoryLeft);
+            this.TabPageHistoryLeft.Location = new System.Drawing.Point(4, 22);
+            this.TabPageHistoryLeft.Name = "tabPage_hidtory_left";
+            this.TabPageHistoryLeft.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPageHistoryLeft.Size = new System.Drawing.Size(536, 155);
+            this.TabPageHistoryLeft.TabIndex = 1;
+            this.TabPageHistoryLeft.Text = "History";
+            this.TabPageHistoryLeft.UseVisualStyleBackColor = true;
             // 
             // listBoxHistoryLeft
             // 
@@ -348,35 +348,35 @@
             // 
             // tabControl_detail_right
             // 
-            this.tabControl_detail_right.Controls.Add(this.tabPage_detail_right);
-            this.tabControl_detail_right.Controls.Add(this.tabPage_history_right);
-            this.tabControl_detail_right.Location = new System.Drawing.Point(649, 476);
-            this.tabControl_detail_right.Name = "tabControl_detail_right";
-            this.tabControl_detail_right.SelectedIndex = 0;
-            this.tabControl_detail_right.Size = new System.Drawing.Size(544, 179);
-            this.tabControl_detail_right.TabIndex = 31;
+            this.TabControlDetailRight.Controls.Add(this.TabPageDetailRight);
+            this.TabControlDetailRight.Controls.Add(this.TabPageHistoryRight);
+            this.TabControlDetailRight.Location = new System.Drawing.Point(649, 476);
+            this.TabControlDetailRight.Name = "tabControl_detail_right";
+            this.TabControlDetailRight.SelectedIndex = 0;
+            this.TabControlDetailRight.Size = new System.Drawing.Size(544, 179);
+            this.TabControlDetailRight.TabIndex = 31;
             // 
             // tabPage_detail_right
             // 
-            this.tabPage_detail_right.Controls.Add(this.DetailsBoxRight);
-            this.tabPage_detail_right.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_detail_right.Name = "tabPage_detail_right";
-            this.tabPage_detail_right.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_detail_right.Size = new System.Drawing.Size(536, 153);
-            this.tabPage_detail_right.TabIndex = 0;
-            this.tabPage_detail_right.Text = "Detail";
-            this.tabPage_detail_right.UseVisualStyleBackColor = true;
+            this.TabPageDetailRight.Controls.Add(this.DetailsBoxRight);
+            this.TabPageDetailRight.Location = new System.Drawing.Point(4, 22);
+            this.TabPageDetailRight.Name = "tabPage_detail_right";
+            this.TabPageDetailRight.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPageDetailRight.Size = new System.Drawing.Size(536, 153);
+            this.TabPageDetailRight.TabIndex = 0;
+            this.TabPageDetailRight.Text = "Detail";
+            this.TabPageDetailRight.UseVisualStyleBackColor = true;
             // 
             // tabPage_history_right
             // 
-            this.tabPage_history_right.Controls.Add(this.listBoxHistoryRight);
-            this.tabPage_history_right.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_history_right.Name = "tabPage_history_right";
-            this.tabPage_history_right.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_history_right.Size = new System.Drawing.Size(536, 153);
-            this.tabPage_history_right.TabIndex = 1;
-            this.tabPage_history_right.Text = "History";
-            this.tabPage_history_right.UseVisualStyleBackColor = true;
+            this.TabPageHistoryRight.Controls.Add(this.listBoxHistoryRight);
+            this.TabPageHistoryRight.Location = new System.Drawing.Point(4, 22);
+            this.TabPageHistoryRight.Name = "tabPage_history_right";
+            this.TabPageHistoryRight.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPageHistoryRight.Size = new System.Drawing.Size(536, 153);
+            this.TabPageHistoryRight.TabIndex = 1;
+            this.TabPageHistoryRight.Text = "History";
+            this.TabPageHistoryRight.UseVisualStyleBackColor = true;
             // 
             // listBoxHistoryRight
             // 
@@ -442,8 +442,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tabControl_detail_right);
-            this.Controls.Add(this.tabControl_detail_left);
+            this.Controls.Add(this.TabControlDetailRight);
+            this.Controls.Add(this.TabControlDetailLeft);
             this.Controls.Add(this.ComboBoxDriveLeft);
             this.Controls.Add(this.ComboBoxDriveRight);
             this.Controls.Add(this.btnCopy_right);
@@ -471,12 +471,12 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.tabControl_detail_left.ResumeLayout(false);
-            this.tabPage_detail_left.ResumeLayout(false);
-            this.tabPage_hidtory_left.ResumeLayout(false);
-            this.tabControl_detail_right.ResumeLayout(false);
-            this.tabPage_detail_right.ResumeLayout(false);
-            this.tabPage_history_right.ResumeLayout(false);
+            this.TabControlDetailLeft.ResumeLayout(false);
+            this.TabPageDetailLeft.ResumeLayout(false);
+            this.TabPageHistoryLeft.ResumeLayout(false);
+            this.TabControlDetailRight.ResumeLayout(false);
+            this.TabPageDetailRight.ResumeLayout(false);
+            this.TabPageHistoryRight.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -509,12 +509,12 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem HistoryMenuItemRight;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.TabControl tabControl_detail_left;
-        private System.Windows.Forms.TabPage tabPage_detail_left;
-        private System.Windows.Forms.TabPage tabPage_hidtory_left;
-        private System.Windows.Forms.TabControl tabControl_detail_right;
-        private System.Windows.Forms.TabPage tabPage_detail_right;
-        private System.Windows.Forms.TabPage tabPage_history_right;
+        private System.Windows.Forms.TabControl TabControlDetailLeft;
+        private System.Windows.Forms.TabPage TabPageDetailLeft;
+        private System.Windows.Forms.TabPage TabPageHistoryLeft;
+        private System.Windows.Forms.TabControl TabControlDetailRight;
+        private System.Windows.Forms.TabPage TabPageDetailRight;
+        private System.Windows.Forms.TabPage TabPageHistoryRight;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Label label2;

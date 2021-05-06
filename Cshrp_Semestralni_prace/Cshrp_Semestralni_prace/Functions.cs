@@ -327,6 +327,48 @@ namespace Cshrp_Semestralni_prace
           
         }
 
+        private void RefreshHistoryFromTab(object sender)
+        {
+            string fullPath = ((ListBox)sender).SelectedItem.ToString();
+
+            bool isDrive = fullPath.LastIndexOf(@":\") == fullPath.Length;
+
+            if (sender == listBoxHistoryLeft)
+            {
+                isFileLeft = false;
+
+                if (isDrive) driveLeft = fullPath;
+                else driveLeft = fullPath.Substring(0, fullPath.IndexOf(@"\") + 1);
+
+                ComboBoxDriveLeft.SelectedItem = driveLeft;
+
+                fullPathLeft = fullPath;
+
+                if (fullPath != driveLeft) pathLeft = fullPath.Substring(fullPath.IndexOf(@"\"));
+                else pathLeft = "";
+                PathtextBoxLeft.Text = pathLeft;
+
+                RefreshSide(true, false);
+            }
+            else 
+            {
+                isFileRight = false;
+
+                if (isDrive) driveRight = fullPath;
+                else driveRight = fullPath.Substring(0, fullPath.IndexOf(@"\") + 1);
+
+                ComboBoxDriveRight.SelectedItem = driveRight;
+
+                fullPathRight = fullPath;
+
+                if (fullPath != driveRight) pathRight = fullPath.Substring(fullPath.IndexOf(@"\"));
+                else pathRight = "";
+                PathtextBoxRight.Text = pathRight;
+
+                RefreshSide(false, false);
+            }
+        }
+
         // Delegované funkce
         
         private void TextBoxEnterHandler(object sender, KeyPressEventArgs e)
