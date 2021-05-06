@@ -9,7 +9,7 @@ namespace Cshrp_Semestralni_prace
     static class Program
     {
         /// <summary>
-        /// Hlavní vstupní bod aplikace.
+        /// The main entry point of the application.
         /// </summary>
         [STAThread]
         static void Main()

@@ -30,63 +30,63 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManagerForm));
-            this.BackButtonLeft = new System.Windows.Forms.Button();
+            this.backButtonLeft = new System.Windows.Forms.Button();
             this.listViewLeft = new System.Windows.Forms.ListView();
             this.iconList = new System.Windows.Forms.ImageList(this.components);
-            this.PathtextBoxLeft = new System.Windows.Forms.TextBox();
+            this.pathtextBoxLeft = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.HistoryMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.HistoryMenuItemLeft = new System.Windows.Forms.ToolStripMenuItem();
+            this.historyMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.historyMenuItemLeft = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.HistoryMenuItemRight = new System.Windows.Forms.ToolStripMenuItem();
+            this.historyMenuItemRight = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DetailsBoxLeft = new System.Windows.Forms.RichTextBox();
-            this.DetailsBoxRight = new System.Windows.Forms.RichTextBox();
-            this.PathtextBoxRight = new System.Windows.Forms.TextBox();
+            this.detailsBoxLeft = new System.Windows.Forms.RichTextBox();
+            this.detailsBoxRight = new System.Windows.Forms.RichTextBox();
+            this.pathtextBoxRight = new System.Windows.Forms.TextBox();
             this.listViewRight = new System.Windows.Forms.ListView();
-            this.BackButtonRight = new System.Windows.Forms.Button();
-            this.btnRemove_left = new System.Windows.Forms.Button();
-            this.btnRename_left = new System.Windows.Forms.Button();
-            this.btnRename_right = new System.Windows.Forms.Button();
-            this.btnRemove_right = new System.Windows.Forms.Button();
-            this.btnMove_left = new System.Windows.Forms.Button();
-            this.btnCopy_left = new System.Windows.Forms.Button();
-            this.btnCopy_right = new System.Windows.Forms.Button();
-            this.btnMove_right = new System.Windows.Forms.Button();
-            this.ComboBoxDriveRight = new System.Windows.Forms.ComboBox();
-            this.ComboBoxDriveLeft = new System.Windows.Forms.ComboBox();
-            this.TabControlDetailLeft = new System.Windows.Forms.TabControl();
-            this.TabPageDetailLeft = new System.Windows.Forms.TabPage();
-            this.TabPageHistoryLeft = new System.Windows.Forms.TabPage();
+            this.backButtonRight = new System.Windows.Forms.Button();
+            this.btnRemoveLeft = new System.Windows.Forms.Button();
+            this.btnRenameLeft = new System.Windows.Forms.Button();
+            this.btnRenameRight = new System.Windows.Forms.Button();
+            this.btnRemoveRight = new System.Windows.Forms.Button();
+            this.btnMoveLeft = new System.Windows.Forms.Button();
+            this.btnCopyLeft = new System.Windows.Forms.Button();
+            this.btnCopyRight = new System.Windows.Forms.Button();
+            this.btnMoveRight = new System.Windows.Forms.Button();
+            this.comboBoxDriveRight = new System.Windows.Forms.ComboBox();
+            this.comboBoxDriveLeft = new System.Windows.Forms.ComboBox();
+            this.tabControlDetailLeft = new System.Windows.Forms.TabControl();
+            this.tabPageDetailLeft = new System.Windows.Forms.TabPage();
+            this.tabPageHistoryLeft = new System.Windows.Forms.TabPage();
             this.listBoxHistoryLeft = new System.Windows.Forms.ListBox();
-            this.TabControlDetailRight = new System.Windows.Forms.TabControl();
-            this.TabPageDetailRight = new System.Windows.Forms.TabPage();
-            this.TabPageHistoryRight = new System.Windows.Forms.TabPage();
+            this.tabControlDetailRight = new System.Windows.Forms.TabControl();
+            this.tabPageDetailRight = new System.Windows.Forms.TabPage();
+            this.tabPageHistoryRight = new System.Windows.Forms.TabPage();
             this.listBoxHistoryRight = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.CleanMenuItemLeft = new System.Windows.Forms.ToolStripMenuItem();
-            this.CleanMenuItemRight = new System.Windows.Forms.ToolStripMenuItem();
+            this.cleanMenuItemLeft = new System.Windows.Forms.ToolStripMenuItem();
+            this.cleanMenuItemRight = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
-            this.TabControlDetailLeft.SuspendLayout();
-            this.TabPageDetailLeft.SuspendLayout();
-            this.TabPageHistoryLeft.SuspendLayout();
-            this.TabControlDetailRight.SuspendLayout();
-            this.TabPageDetailRight.SuspendLayout();
-            this.TabPageHistoryRight.SuspendLayout();
+            this.tabControlDetailLeft.SuspendLayout();
+            this.tabPageDetailLeft.SuspendLayout();
+            this.tabPageHistoryLeft.SuspendLayout();
+            this.tabControlDetailRight.SuspendLayout();
+            this.tabPageDetailRight.SuspendLayout();
+            this.tabPageHistoryRight.SuspendLayout();
             this.SuspendLayout();
             // 
             // BackButtonLeft
             // 
-            this.BackButtonLeft.Location = new System.Drawing.Point(12, 30);
-            this.BackButtonLeft.Name = "BackButtonLeft";
-            this.BackButtonLeft.Size = new System.Drawing.Size(42, 20);
-            this.BackButtonLeft.TabIndex = 0;
-            this.BackButtonLeft.Text = "Back";
-            this.BackButtonLeft.UseVisualStyleBackColor = true;
-            this.BackButtonLeft.Click += new System.EventHandler(this.BackButtonLeft_Click);
+            this.backButtonLeft.Location = new System.Drawing.Point(12, 30);
+            this.backButtonLeft.Name = "BackButtonLeft";
+            this.backButtonLeft.Size = new System.Drawing.Size(42, 20);
+            this.backButtonLeft.TabIndex = 0;
+            this.backButtonLeft.Text = "Back";
+            this.backButtonLeft.UseVisualStyleBackColor = true;
+            this.backButtonLeft.Click += new System.EventHandler(this.BackButtonLeft_Click);
             // 
             // listViewLeft
             // 
@@ -110,15 +110,15 @@
             // 
             // PathtextBoxLeft
             // 
-            this.PathtextBoxLeft.Location = new System.Drawing.Point(108, 31);
-            this.PathtextBoxLeft.Name = "PathtextBoxLeft";
-            this.PathtextBoxLeft.Size = new System.Drawing.Size(448, 20);
-            this.PathtextBoxLeft.TabIndex = 2;
+            this.pathtextBoxLeft.Location = new System.Drawing.Point(108, 31);
+            this.pathtextBoxLeft.Name = "PathtextBoxLeft";
+            this.pathtextBoxLeft.Size = new System.Drawing.Size(448, 20);
+            this.pathtextBoxLeft.TabIndex = 2;
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.HistoryMenuItem,
+            this.historyMenuItem,
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -128,21 +128,21 @@
             // 
             // HistoryMenuItem
             // 
-            this.HistoryMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.HistoryMenuItemLeft,
-            this.CleanMenuItemLeft,
+            this.historyMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.historyMenuItemLeft,
+            this.cleanMenuItemLeft,
             this.toolStripSeparator1,
-            this.HistoryMenuItemRight,
-            this.CleanMenuItemRight});
-            this.HistoryMenuItem.Name = "HistoryMenuItem";
-            this.HistoryMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.HistoryMenuItem.Text = "History";
+            this.historyMenuItemRight,
+            this.cleanMenuItemRight});
+            this.historyMenuItem.Name = "HistoryMenuItem";
+            this.historyMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.historyMenuItem.Text = "History";
             // 
             // HistoryMenuItemLeft
             // 
-            this.HistoryMenuItemLeft.Name = "HistoryMenuItemLeft";
-            this.HistoryMenuItemLeft.Size = new System.Drawing.Size(180, 22);
-            this.HistoryMenuItemLeft.Text = "Left window";
+            this.historyMenuItemLeft.Name = "HistoryMenuItemLeft";
+            this.historyMenuItemLeft.Size = new System.Drawing.Size(180, 22);
+            this.historyMenuItemLeft.Text = "Left window";
             // 
             // toolStripSeparator1
             // 
@@ -151,9 +151,9 @@
             // 
             // HistoryMenuItemRight
             // 
-            this.HistoryMenuItemRight.Name = "HistoryMenuItemRight";
-            this.HistoryMenuItemRight.Size = new System.Drawing.Size(180, 22);
-            this.HistoryMenuItemRight.Text = "Right window";
+            this.historyMenuItemRight.Name = "HistoryMenuItemRight";
+            this.historyMenuItemRight.Size = new System.Drawing.Size(180, 22);
+            this.historyMenuItemRight.Text = "Right window";
             // 
             // aboutToolStripMenuItem
             // 
@@ -164,26 +164,26 @@
             // 
             // DetailsBoxLeft
             // 
-            this.DetailsBoxLeft.Location = new System.Drawing.Point(-3, 0);
-            this.DetailsBoxLeft.Name = "DetailsBoxLeft";
-            this.DetailsBoxLeft.Size = new System.Drawing.Size(539, 159);
-            this.DetailsBoxLeft.TabIndex = 5;
-            this.DetailsBoxLeft.Text = "";
+            this.detailsBoxLeft.Location = new System.Drawing.Point(-3, 0);
+            this.detailsBoxLeft.Name = "DetailsBoxLeft";
+            this.detailsBoxLeft.Size = new System.Drawing.Size(539, 159);
+            this.detailsBoxLeft.TabIndex = 5;
+            this.detailsBoxLeft.Text = "";
             // 
             // DetailsBoxRight
             // 
-            this.DetailsBoxRight.Location = new System.Drawing.Point(0, 0);
-            this.DetailsBoxRight.Name = "DetailsBoxRight";
-            this.DetailsBoxRight.Size = new System.Drawing.Size(536, 153);
-            this.DetailsBoxRight.TabIndex = 11;
-            this.DetailsBoxRight.Text = "";
+            this.detailsBoxRight.Location = new System.Drawing.Point(0, 0);
+            this.detailsBoxRight.Name = "DetailsBoxRight";
+            this.detailsBoxRight.Size = new System.Drawing.Size(536, 153);
+            this.detailsBoxRight.TabIndex = 11;
+            this.detailsBoxRight.Text = "";
             // 
             // PathtextBoxRight
             // 
-            this.PathtextBoxRight.Location = new System.Drawing.Point(745, 31);
-            this.PathtextBoxRight.Name = "PathtextBoxRight";
-            this.PathtextBoxRight.Size = new System.Drawing.Size(448, 20);
-            this.PathtextBoxRight.TabIndex = 9;
+            this.pathtextBoxRight.Location = new System.Drawing.Point(745, 31);
+            this.pathtextBoxRight.Name = "PathtextBoxRight";
+            this.pathtextBoxRight.Size = new System.Drawing.Size(448, 20);
+            this.pathtextBoxRight.TabIndex = 9;
             // 
             // listViewRight
             // 
@@ -201,141 +201,141 @@
             // 
             // BackButtonRight
             // 
-            this.BackButtonRight.Location = new System.Drawing.Point(649, 30);
-            this.BackButtonRight.Name = "BackButtonRight";
-            this.BackButtonRight.Size = new System.Drawing.Size(42, 20);
-            this.BackButtonRight.TabIndex = 7;
-            this.BackButtonRight.Text = "Back";
-            this.BackButtonRight.UseVisualStyleBackColor = true;
-            this.BackButtonRight.Click += new System.EventHandler(this.BackButtonRight_Click);
+            this.backButtonRight.Location = new System.Drawing.Point(649, 30);
+            this.backButtonRight.Name = "BackButtonRight";
+            this.backButtonRight.Size = new System.Drawing.Size(42, 20);
+            this.backButtonRight.TabIndex = 7;
+            this.backButtonRight.Text = "Back";
+            this.backButtonRight.UseVisualStyleBackColor = true;
+            this.backButtonRight.Click += new System.EventHandler(this.BackButtonRight_Click);
             // 
             // btnRemove_left
             // 
-            this.btnRemove_left.Location = new System.Drawing.Point(562, 113);
-            this.btnRemove_left.Name = "btnRemove_left";
-            this.btnRemove_left.Size = new System.Drawing.Size(81, 23);
-            this.btnRemove_left.TabIndex = 20;
-            this.btnRemove_left.Text = "Remove file";
-            this.btnRemove_left.UseVisualStyleBackColor = true;
-            this.btnRemove_left.Click += new System.EventHandler(this.BtnRemoveLeft_Click);
+            this.btnRemoveLeft.Location = new System.Drawing.Point(562, 113);
+            this.btnRemoveLeft.Name = "btnRemove_left";
+            this.btnRemoveLeft.Size = new System.Drawing.Size(81, 23);
+            this.btnRemoveLeft.TabIndex = 20;
+            this.btnRemoveLeft.Text = "Remove file";
+            this.btnRemoveLeft.UseVisualStyleBackColor = true;
+            this.btnRemoveLeft.Click += new System.EventHandler(this.BtnRemoveLeft_Click);
             // 
             // btnRename_left
             // 
-            this.btnRename_left.Location = new System.Drawing.Point(562, 142);
-            this.btnRename_left.Name = "btnRename_left";
-            this.btnRename_left.Size = new System.Drawing.Size(81, 23);
-            this.btnRename_left.TabIndex = 21;
-            this.btnRename_left.Text = "Rename file";
-            this.btnRename_left.UseVisualStyleBackColor = true;
-            this.btnRename_left.Click += new System.EventHandler(this.BtnRenameLeft_Click);
+            this.btnRenameLeft.Location = new System.Drawing.Point(562, 142);
+            this.btnRenameLeft.Name = "btnRename_left";
+            this.btnRenameLeft.Size = new System.Drawing.Size(81, 23);
+            this.btnRenameLeft.TabIndex = 21;
+            this.btnRenameLeft.Text = "Rename file";
+            this.btnRenameLeft.UseVisualStyleBackColor = true;
+            this.btnRenameLeft.Click += new System.EventHandler(this.BtnRenameLeft_Click);
             // 
             // btnRename_right
             // 
-            this.btnRename_right.Location = new System.Drawing.Point(562, 330);
-            this.btnRename_right.Name = "btnRename_right";
-            this.btnRename_right.Size = new System.Drawing.Size(81, 23);
-            this.btnRename_right.TabIndex = 23;
-            this.btnRename_right.Text = "Rename file";
-            this.btnRename_right.UseVisualStyleBackColor = true;
-            this.btnRename_right.Click += new System.EventHandler(this.BtnRenameRight_Click);
+            this.btnRenameRight.Location = new System.Drawing.Point(562, 330);
+            this.btnRenameRight.Name = "btnRename_right";
+            this.btnRenameRight.Size = new System.Drawing.Size(81, 23);
+            this.btnRenameRight.TabIndex = 23;
+            this.btnRenameRight.Text = "Rename file";
+            this.btnRenameRight.UseVisualStyleBackColor = true;
+            this.btnRenameRight.Click += new System.EventHandler(this.BtnRenameRight_Click);
             // 
             // btnRemove_right
             // 
-            this.btnRemove_right.Location = new System.Drawing.Point(562, 301);
-            this.btnRemove_right.Name = "btnRemove_right";
-            this.btnRemove_right.Size = new System.Drawing.Size(81, 23);
-            this.btnRemove_right.TabIndex = 22;
-            this.btnRemove_right.Text = "Remove file";
-            this.btnRemove_right.UseVisualStyleBackColor = true;
-            this.btnRemove_right.Click += new System.EventHandler(this.BtnRemoveRight_Click);
+            this.btnRemoveRight.Location = new System.Drawing.Point(562, 301);
+            this.btnRemoveRight.Name = "btnRemove_right";
+            this.btnRemoveRight.Size = new System.Drawing.Size(81, 23);
+            this.btnRemoveRight.TabIndex = 22;
+            this.btnRemoveRight.Text = "Remove file";
+            this.btnRemoveRight.UseVisualStyleBackColor = true;
+            this.btnRemoveRight.Click += new System.EventHandler(this.BtnRemoveRight_Click);
             // 
             // btnMove_left
             // 
-            this.btnMove_left.Location = new System.Drawing.Point(562, 171);
-            this.btnMove_left.Name = "btnMove_left";
-            this.btnMove_left.Size = new System.Drawing.Size(81, 23);
-            this.btnMove_left.TabIndex = 24;
-            this.btnMove_left.Text = "Move ▷▷";
-            this.btnMove_left.UseVisualStyleBackColor = true;
-            this.btnMove_left.Click += new System.EventHandler(this.BtnMoveLeft_Click);
+            this.btnMoveLeft.Location = new System.Drawing.Point(562, 171);
+            this.btnMoveLeft.Name = "btnMove_left";
+            this.btnMoveLeft.Size = new System.Drawing.Size(81, 23);
+            this.btnMoveLeft.TabIndex = 24;
+            this.btnMoveLeft.Text = "Move ▷▷";
+            this.btnMoveLeft.UseVisualStyleBackColor = true;
+            this.btnMoveLeft.Click += new System.EventHandler(this.BtnMoveLeft_Click);
             // 
             // btnCopy_left
             // 
-            this.btnCopy_left.Location = new System.Drawing.Point(562, 200);
-            this.btnCopy_left.Name = "btnCopy_left";
-            this.btnCopy_left.Size = new System.Drawing.Size(81, 23);
-            this.btnCopy_left.TabIndex = 25;
-            this.btnCopy_left.Text = "Copy ▷▷";
-            this.btnCopy_left.UseVisualStyleBackColor = true;
-            this.btnCopy_left.Click += new System.EventHandler(this.BtnCopyLeft_Click);
+            this.btnCopyLeft.Location = new System.Drawing.Point(562, 200);
+            this.btnCopyLeft.Name = "btnCopy_left";
+            this.btnCopyLeft.Size = new System.Drawing.Size(81, 23);
+            this.btnCopyLeft.TabIndex = 25;
+            this.btnCopyLeft.Text = "Copy ▷▷";
+            this.btnCopyLeft.UseVisualStyleBackColor = true;
+            this.btnCopyLeft.Click += new System.EventHandler(this.BtnCopyLeft_Click);
             // 
             // btnCopy_right
             // 
-            this.btnCopy_right.Location = new System.Drawing.Point(562, 388);
-            this.btnCopy_right.Name = "btnCopy_right";
-            this.btnCopy_right.Size = new System.Drawing.Size(81, 23);
-            this.btnCopy_right.TabIndex = 27;
-            this.btnCopy_right.Text = "◁◁ Copy";
-            this.btnCopy_right.UseVisualStyleBackColor = true;
-            this.btnCopy_right.Click += new System.EventHandler(this.BtnCopyRight_Click);
+            this.btnCopyRight.Location = new System.Drawing.Point(562, 388);
+            this.btnCopyRight.Name = "btnCopy_right";
+            this.btnCopyRight.Size = new System.Drawing.Size(81, 23);
+            this.btnCopyRight.TabIndex = 27;
+            this.btnCopyRight.Text = "◁◁ Copy";
+            this.btnCopyRight.UseVisualStyleBackColor = true;
+            this.btnCopyRight.Click += new System.EventHandler(this.BtnCopyRight_Click);
             // 
             // btnMove_right
             // 
-            this.btnMove_right.Location = new System.Drawing.Point(562, 359);
-            this.btnMove_right.Name = "btnMove_right";
-            this.btnMove_right.Size = new System.Drawing.Size(81, 23);
-            this.btnMove_right.TabIndex = 26;
-            this.btnMove_right.Text = "◁◁ Move";
-            this.btnMove_right.UseVisualStyleBackColor = true;
-            this.btnMove_right.Click += new System.EventHandler(this.BtnMoveRight_Click);
+            this.btnMoveRight.Location = new System.Drawing.Point(562, 359);
+            this.btnMoveRight.Name = "btnMove_right";
+            this.btnMoveRight.Size = new System.Drawing.Size(81, 23);
+            this.btnMoveRight.TabIndex = 26;
+            this.btnMoveRight.Text = "◁◁ Move";
+            this.btnMoveRight.UseVisualStyleBackColor = true;
+            this.btnMoveRight.Click += new System.EventHandler(this.BtnMoveRight_Click);
             // 
             // ComboBoxDriveRight
             // 
-            this.ComboBoxDriveRight.FormattingEnabled = true;
-            this.ComboBoxDriveRight.Location = new System.Drawing.Point(698, 29);
-            this.ComboBoxDriveRight.Name = "ComboBoxDriveRight";
-            this.ComboBoxDriveRight.Size = new System.Drawing.Size(41, 21);
-            this.ComboBoxDriveRight.TabIndex = 28;
+            this.comboBoxDriveRight.FormattingEnabled = true;
+            this.comboBoxDriveRight.Location = new System.Drawing.Point(698, 29);
+            this.comboBoxDriveRight.Name = "ComboBoxDriveRight";
+            this.comboBoxDriveRight.Size = new System.Drawing.Size(41, 21);
+            this.comboBoxDriveRight.TabIndex = 28;
             // 
             // ComboBoxDriveLeft
             // 
-            this.ComboBoxDriveLeft.FormattingEnabled = true;
-            this.ComboBoxDriveLeft.Location = new System.Drawing.Point(61, 31);
-            this.ComboBoxDriveLeft.Name = "ComboBoxDriveLeft";
-            this.ComboBoxDriveLeft.Size = new System.Drawing.Size(41, 21);
-            this.ComboBoxDriveLeft.TabIndex = 29;
+            this.comboBoxDriveLeft.FormattingEnabled = true;
+            this.comboBoxDriveLeft.Location = new System.Drawing.Point(61, 31);
+            this.comboBoxDriveLeft.Name = "ComboBoxDriveLeft";
+            this.comboBoxDriveLeft.Size = new System.Drawing.Size(41, 21);
+            this.comboBoxDriveLeft.TabIndex = 29;
             // 
             // tabControl_detail_left
             // 
-            this.TabControlDetailLeft.Controls.Add(this.TabPageDetailLeft);
-            this.TabControlDetailLeft.Controls.Add(this.TabPageHistoryLeft);
-            this.TabControlDetailLeft.Location = new System.Drawing.Point(12, 476);
-            this.TabControlDetailLeft.Name = "tabControl_detail_left";
-            this.TabControlDetailLeft.SelectedIndex = 0;
-            this.TabControlDetailLeft.Size = new System.Drawing.Size(544, 181);
-            this.TabControlDetailLeft.TabIndex = 30;
+            this.tabControlDetailLeft.Controls.Add(this.tabPageDetailLeft);
+            this.tabControlDetailLeft.Controls.Add(this.tabPageHistoryLeft);
+            this.tabControlDetailLeft.Location = new System.Drawing.Point(12, 476);
+            this.tabControlDetailLeft.Name = "tabControl_detail_left";
+            this.tabControlDetailLeft.SelectedIndex = 0;
+            this.tabControlDetailLeft.Size = new System.Drawing.Size(544, 181);
+            this.tabControlDetailLeft.TabIndex = 30;
             // 
             // tabPage_detail_left
             // 
-            this.TabPageDetailLeft.Controls.Add(this.DetailsBoxLeft);
-            this.TabPageDetailLeft.Location = new System.Drawing.Point(4, 22);
-            this.TabPageDetailLeft.Name = "tabPage_detail_left";
-            this.TabPageDetailLeft.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPageDetailLeft.Size = new System.Drawing.Size(536, 155);
-            this.TabPageDetailLeft.TabIndex = 0;
-            this.TabPageDetailLeft.Text = "Detail";
-            this.TabPageDetailLeft.UseVisualStyleBackColor = true;
+            this.tabPageDetailLeft.Controls.Add(this.detailsBoxLeft);
+            this.tabPageDetailLeft.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDetailLeft.Name = "tabPage_detail_left";
+            this.tabPageDetailLeft.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDetailLeft.Size = new System.Drawing.Size(536, 155);
+            this.tabPageDetailLeft.TabIndex = 0;
+            this.tabPageDetailLeft.Text = "Detail";
+            this.tabPageDetailLeft.UseVisualStyleBackColor = true;
             // 
             // tabPage_hidtory_left
             // 
-            this.TabPageHistoryLeft.Controls.Add(this.listBoxHistoryLeft);
-            this.TabPageHistoryLeft.Location = new System.Drawing.Point(4, 22);
-            this.TabPageHistoryLeft.Name = "tabPage_hidtory_left";
-            this.TabPageHistoryLeft.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPageHistoryLeft.Size = new System.Drawing.Size(536, 155);
-            this.TabPageHistoryLeft.TabIndex = 1;
-            this.TabPageHistoryLeft.Text = "History";
-            this.TabPageHistoryLeft.UseVisualStyleBackColor = true;
+            this.tabPageHistoryLeft.Controls.Add(this.listBoxHistoryLeft);
+            this.tabPageHistoryLeft.Location = new System.Drawing.Point(4, 22);
+            this.tabPageHistoryLeft.Name = "tabPage_hidtory_left";
+            this.tabPageHistoryLeft.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageHistoryLeft.Size = new System.Drawing.Size(536, 155);
+            this.tabPageHistoryLeft.TabIndex = 1;
+            this.tabPageHistoryLeft.Text = "History";
+            this.tabPageHistoryLeft.UseVisualStyleBackColor = true;
             // 
             // listBoxHistoryLeft
             // 
@@ -348,35 +348,35 @@
             // 
             // tabControl_detail_right
             // 
-            this.TabControlDetailRight.Controls.Add(this.TabPageDetailRight);
-            this.TabControlDetailRight.Controls.Add(this.TabPageHistoryRight);
-            this.TabControlDetailRight.Location = new System.Drawing.Point(649, 476);
-            this.TabControlDetailRight.Name = "tabControl_detail_right";
-            this.TabControlDetailRight.SelectedIndex = 0;
-            this.TabControlDetailRight.Size = new System.Drawing.Size(544, 179);
-            this.TabControlDetailRight.TabIndex = 31;
+            this.tabControlDetailRight.Controls.Add(this.tabPageDetailRight);
+            this.tabControlDetailRight.Controls.Add(this.tabPageHistoryRight);
+            this.tabControlDetailRight.Location = new System.Drawing.Point(649, 476);
+            this.tabControlDetailRight.Name = "tabControl_detail_right";
+            this.tabControlDetailRight.SelectedIndex = 0;
+            this.tabControlDetailRight.Size = new System.Drawing.Size(544, 179);
+            this.tabControlDetailRight.TabIndex = 31;
             // 
             // tabPage_detail_right
             // 
-            this.TabPageDetailRight.Controls.Add(this.DetailsBoxRight);
-            this.TabPageDetailRight.Location = new System.Drawing.Point(4, 22);
-            this.TabPageDetailRight.Name = "tabPage_detail_right";
-            this.TabPageDetailRight.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPageDetailRight.Size = new System.Drawing.Size(536, 153);
-            this.TabPageDetailRight.TabIndex = 0;
-            this.TabPageDetailRight.Text = "Detail";
-            this.TabPageDetailRight.UseVisualStyleBackColor = true;
+            this.tabPageDetailRight.Controls.Add(this.detailsBoxRight);
+            this.tabPageDetailRight.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDetailRight.Name = "tabPage_detail_right";
+            this.tabPageDetailRight.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDetailRight.Size = new System.Drawing.Size(536, 153);
+            this.tabPageDetailRight.TabIndex = 0;
+            this.tabPageDetailRight.Text = "Detail";
+            this.tabPageDetailRight.UseVisualStyleBackColor = true;
             // 
             // tabPage_history_right
             // 
-            this.TabPageHistoryRight.Controls.Add(this.listBoxHistoryRight);
-            this.TabPageHistoryRight.Location = new System.Drawing.Point(4, 22);
-            this.TabPageHistoryRight.Name = "tabPage_history_right";
-            this.TabPageHistoryRight.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPageHistoryRight.Size = new System.Drawing.Size(536, 153);
-            this.TabPageHistoryRight.TabIndex = 1;
-            this.TabPageHistoryRight.Text = "History";
-            this.TabPageHistoryRight.UseVisualStyleBackColor = true;
+            this.tabPageHistoryRight.Controls.Add(this.listBoxHistoryRight);
+            this.tabPageHistoryRight.Location = new System.Drawing.Point(4, 22);
+            this.tabPageHistoryRight.Name = "tabPage_history_right";
+            this.tabPageHistoryRight.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageHistoryRight.Size = new System.Drawing.Size(536, 153);
+            this.tabPageHistoryRight.TabIndex = 1;
+            this.tabPageHistoryRight.Text = "History";
+            this.tabPageHistoryRight.UseVisualStyleBackColor = true;
             // 
             // listBoxHistoryRight
             // 
@@ -423,15 +423,15 @@
             // 
             // cleanMenuItemLeft
             // 
-            this.CleanMenuItemLeft.Name = "cleanMenuItemLeft";
-            this.CleanMenuItemLeft.Size = new System.Drawing.Size(180, 22);
-            this.CleanMenuItemLeft.Text = "Clean history (left)";
+            this.cleanMenuItemLeft.Name = "cleanMenuItemLeft";
+            this.cleanMenuItemLeft.Size = new System.Drawing.Size(180, 22);
+            this.cleanMenuItemLeft.Text = "Clean history (left)";
             // 
             // cleanMenuItemRight
             // 
-            this.CleanMenuItemRight.Name = "cleanMenuItemRight";
-            this.CleanMenuItemRight.Size = new System.Drawing.Size(180, 22);
-            this.CleanMenuItemRight.Text = "Clean history (right)";
+            this.cleanMenuItemRight.Name = "cleanMenuItemRight";
+            this.cleanMenuItemRight.Size = new System.Drawing.Size(180, 22);
+            this.cleanMenuItemRight.Text = "Clean history (right)";
             // 
             // ManagerForm
             // 
@@ -442,24 +442,24 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TabControlDetailRight);
-            this.Controls.Add(this.TabControlDetailLeft);
-            this.Controls.Add(this.ComboBoxDriveLeft);
-            this.Controls.Add(this.ComboBoxDriveRight);
-            this.Controls.Add(this.btnCopy_right);
-            this.Controls.Add(this.btnMove_right);
-            this.Controls.Add(this.btnCopy_left);
-            this.Controls.Add(this.btnMove_left);
-            this.Controls.Add(this.btnRename_right);
-            this.Controls.Add(this.btnRemove_right);
-            this.Controls.Add(this.btnRename_left);
-            this.Controls.Add(this.btnRemove_left);
-            this.Controls.Add(this.PathtextBoxRight);
+            this.Controls.Add(this.tabControlDetailRight);
+            this.Controls.Add(this.tabControlDetailLeft);
+            this.Controls.Add(this.comboBoxDriveLeft);
+            this.Controls.Add(this.comboBoxDriveRight);
+            this.Controls.Add(this.btnCopyRight);
+            this.Controls.Add(this.btnMoveRight);
+            this.Controls.Add(this.btnCopyLeft);
+            this.Controls.Add(this.btnMoveLeft);
+            this.Controls.Add(this.btnRenameRight);
+            this.Controls.Add(this.btnRemoveRight);
+            this.Controls.Add(this.btnRenameLeft);
+            this.Controls.Add(this.btnRemoveLeft);
+            this.Controls.Add(this.pathtextBoxRight);
             this.Controls.Add(this.listViewRight);
-            this.Controls.Add(this.BackButtonRight);
-            this.Controls.Add(this.PathtextBoxLeft);
+            this.Controls.Add(this.backButtonRight);
+            this.Controls.Add(this.pathtextBoxLeft);
             this.Controls.Add(this.listViewLeft);
-            this.Controls.Add(this.BackButtonLeft);
+            this.Controls.Add(this.backButtonLeft);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -471,12 +471,12 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.TabControlDetailLeft.ResumeLayout(false);
-            this.TabPageDetailLeft.ResumeLayout(false);
-            this.TabPageHistoryLeft.ResumeLayout(false);
-            this.TabControlDetailRight.ResumeLayout(false);
-            this.TabPageDetailRight.ResumeLayout(false);
-            this.TabPageHistoryRight.ResumeLayout(false);
+            this.tabControlDetailLeft.ResumeLayout(false);
+            this.tabPageDetailLeft.ResumeLayout(false);
+            this.tabPageHistoryLeft.ResumeLayout(false);
+            this.tabControlDetailRight.ResumeLayout(false);
+            this.tabPageDetailRight.ResumeLayout(false);
+            this.tabPageHistoryRight.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -484,45 +484,45 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BackButtonLeft;
+        private System.Windows.Forms.Button backButtonLeft;
         private System.Windows.Forms.ListView listViewLeft;
-        private System.Windows.Forms.TextBox PathtextBoxLeft;
+        private System.Windows.Forms.TextBox pathtextBoxLeft;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem HistoryMenuItem;
-        private System.Windows.Forms.RichTextBox DetailsBoxLeft;
-        private System.Windows.Forms.RichTextBox DetailsBoxRight;
-        private System.Windows.Forms.TextBox PathtextBoxRight;
+        private System.Windows.Forms.ToolStripMenuItem historyMenuItem;
+        private System.Windows.Forms.RichTextBox detailsBoxLeft;
+        private System.Windows.Forms.RichTextBox detailsBoxRight;
+        private System.Windows.Forms.TextBox pathtextBoxRight;
         private System.Windows.Forms.ListView listViewRight;
-        private System.Windows.Forms.Button BackButtonRight;
-        private System.Windows.Forms.Button btnRemove_left;
-        private System.Windows.Forms.Button btnRename_left;
-        private System.Windows.Forms.Button btnRename_right;
-        private System.Windows.Forms.Button btnRemove_right;
-        private System.Windows.Forms.Button btnMove_left;
-        private System.Windows.Forms.Button btnCopy_left;
-        private System.Windows.Forms.Button btnCopy_right;
-        private System.Windows.Forms.Button btnMove_right;
+        private System.Windows.Forms.Button backButtonRight;
+        private System.Windows.Forms.Button btnRemoveLeft;
+        private System.Windows.Forms.Button btnRenameLeft;
+        private System.Windows.Forms.Button btnRenameRight;
+        private System.Windows.Forms.Button btnRemoveRight;
+        private System.Windows.Forms.Button btnMoveLeft;
+        private System.Windows.Forms.Button btnCopyLeft;
+        private System.Windows.Forms.Button btnCopyRight;
+        private System.Windows.Forms.Button btnMoveRight;
         private System.Windows.Forms.ImageList iconList;
-        private System.Windows.Forms.ComboBox ComboBoxDriveRight;
-        private System.Windows.Forms.ComboBox ComboBoxDriveLeft;
-        private System.Windows.Forms.ToolStripMenuItem HistoryMenuItemLeft;
+        private System.Windows.Forms.ComboBox comboBoxDriveRight;
+        private System.Windows.Forms.ComboBox comboBoxDriveLeft;
+        private System.Windows.Forms.ToolStripMenuItem historyMenuItemLeft;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem HistoryMenuItemRight;
+        private System.Windows.Forms.ToolStripMenuItem historyMenuItemRight;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.TabControl TabControlDetailLeft;
-        private System.Windows.Forms.TabPage TabPageDetailLeft;
-        private System.Windows.Forms.TabPage TabPageHistoryLeft;
-        private System.Windows.Forms.TabControl TabControlDetailRight;
-        private System.Windows.Forms.TabPage TabPageDetailRight;
-        private System.Windows.Forms.TabPage TabPageHistoryRight;
+        private System.Windows.Forms.TabControl tabControlDetailLeft;
+        private System.Windows.Forms.TabPage tabPageDetailLeft;
+        private System.Windows.Forms.TabPage tabPageHistoryLeft;
+        private System.Windows.Forms.TabControl tabControlDetailRight;
+        private System.Windows.Forms.TabPage tabPageDetailRight;
+        private System.Windows.Forms.TabPage tabPageHistoryRight;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox listBoxHistoryLeft;
         private System.Windows.Forms.ListBox listBoxHistoryRight;
-        private System.Windows.Forms.ToolStripMenuItem CleanMenuItemLeft;
-        private System.Windows.Forms.ToolStripMenuItem CleanMenuItemRight;
+        private System.Windows.Forms.ToolStripMenuItem cleanMenuItemLeft;
+        private System.Windows.Forms.ToolStripMenuItem cleanMenuItemRight;
     }
 }
 

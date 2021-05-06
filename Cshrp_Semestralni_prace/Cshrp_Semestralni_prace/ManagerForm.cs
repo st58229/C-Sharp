@@ -51,17 +51,17 @@ namespace Cshrp_Semestralni_prace
         {            
             InitializeComponent();
 
-            PathtextBoxLeft.KeyPress += new KeyPressEventHandler(TextBoxEnterHandler);
-            PathtextBoxRight.KeyPress += new KeyPressEventHandler(TextBoxEnterHandler);
+            pathtextBoxLeft.KeyPress += new KeyPressEventHandler(TextBoxEnterHandler);
+            pathtextBoxRight.KeyPress += new KeyPressEventHandler(TextBoxEnterHandler);
 
-            HistoryMenuItemLeft.Click += new EventHandler(OpenHistoryDialog);
-            HistoryMenuItemRight.Click  += new EventHandler(OpenHistoryDialog);
+            historyMenuItemLeft.Click += new EventHandler(OpenHistoryDialog);
+            historyMenuItemRight.Click  += new EventHandler(OpenHistoryDialog);
 
-            CleanMenuItemLeft.Click += new EventHandler(CleanHistory);
-            CleanMenuItemRight.Click += new EventHandler(CleanHistory);
+            cleanMenuItemLeft.Click += new EventHandler(CleanHistory);
+            cleanMenuItemRight.Click += new EventHandler(CleanHistory);
 
-            ComboBoxDriveLeft.SelectedIndexChanged += new EventHandler(RefreshDriveSelection);
-            ComboBoxDriveRight.SelectedIndexChanged += new EventHandler(RefreshDriveSelection);
+            comboBoxDriveLeft.SelectedIndexChanged += new EventHandler(RefreshDriveSelection);
+            comboBoxDriveRight.SelectedIndexChanged += new EventHandler(RefreshDriveSelection);
         }    
 
         private void Form1_Load(object sender, EventArgs e)
@@ -73,12 +73,12 @@ namespace Cshrp_Semestralni_prace
 
         private void ListViewLeft_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
         {            
-            ItemSelection(e, fullPathLeft, pathLeft, ref selectedFileLeft, PathtextBoxLeft, DetailsBoxLeft, ref isFileLeft);            
+            ItemSelection(e, fullPathLeft, pathLeft, ref selectedFileLeft, pathtextBoxLeft, detailsBoxLeft, ref isFileLeft);            
         }
 
         private void ListViewRight_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
         {
-            ItemSelection(e, fullPathRight, pathRight, ref selectedFileRight, PathtextBoxRight, DetailsBoxRight, ref isFileRight);
+            ItemSelection(e, fullPathRight, pathRight, ref selectedFileRight, pathtextBoxRight, detailsBoxRight, ref isFileRight);
         }
 
         private void ListViewLeft_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -89,21 +89,35 @@ namespace Cshrp_Semestralni_prace
         private void ListViewRight_MouseDoubleClick(object sender, MouseEventArgs e)
         {            
             RefreshSide(false, false);           
-        }   
-        
+        }
 
-        /*TLAČÍTKA*/
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Semestrální práce C# 2021 - Fráňa Tomáš | st58229", "About.", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+        }
+
+        private void ListBoxHistoryLeft_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            RefreshHistoryFromTab(sender);
+        }
+
+        private void ListBoxHistoryRight_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            RefreshHistoryFromTab(sender);
+        }
+
+        /*BUTTONS*/
 
         private void BackButtonLeft_Click(object sender, EventArgs e)
         {
-            Back(sender, PathtextBoxLeft, ref isFileLeft);
-            pathLeft = PathtextBoxLeft.Text;
+            Back(sender, pathtextBoxLeft, ref isFileLeft);
+            pathLeft = pathtextBoxLeft.Text;
         }
 
         private void BackButtonRight_Click(object sender, EventArgs e)
         {
-            Back(sender, PathtextBoxRight, ref isFileRight);
-            pathRight = PathtextBoxRight.Text;
+            Back(sender, pathtextBoxRight, ref isFileRight);
+            pathRight = pathtextBoxRight.Text;
         }
 
         private void BtnRemoveLeft_Click(object sender, EventArgs e)
@@ -144,21 +158,6 @@ namespace Cshrp_Semestralni_prace
         private void BtnCopyRight_Click(object sender, EventArgs e)
         {
             CopyFile(fullPathRight, selectedFileRight, fullPathLeft);
-        }
-
-        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Semestrální práce C# 2021 - Fráňa Tomáš | st58229", "About.", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-        }
-
-        private void ListBoxHistoryLeft_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            RefreshHistoryFromTab(sender);
-        }
-
-        private void ListBoxHistoryRight_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            RefreshHistoryFromTab(sender);
         }
     }
 }

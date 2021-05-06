@@ -16,7 +16,7 @@ namespace Cshrp_Semestralni_prace
     {
         public string SelectedLog { get; set; } = "";
 
-        private string logFilePath;
+        private readonly string logFilePath;
 
         public HistoryForm(string pathToLogFile)
         {
@@ -31,14 +31,14 @@ namespace Cshrp_Semestralni_prace
                 string s = "";
                 while ((s = sr.ReadLine()) != null)
                 {
-                    ListBoxLogs.Items.Add(s);
+                    listBoxLogs.Items.Add(s);
                 }
             }
         }
 
         private void ListBoxLogs_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            SelectedLog = ListBoxLogs.SelectedItem.ToString();
+            SelectedLog = listBoxLogs.SelectedItem.ToString();
             this.Close();
         }
     }

@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ListBoxLogs = new System.Windows.Forms.ListBox();
+            this.listBoxLogs = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listBoxLogs
             // 
-            this.ListBoxLogs.FormattingEnabled = true;
-            this.ListBoxLogs.Location = new System.Drawing.Point(12, 45);
-            this.ListBoxLogs.Name = "listBoxLogs";
-            this.ListBoxLogs.Size = new System.Drawing.Size(558, 238);
-            this.ListBoxLogs.TabIndex = 0;
-            this.ListBoxLogs.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ListBoxLogs_MouseDoubleClick);
+            this.listBoxLogs.FormattingEnabled = true;
+            this.listBoxLogs.Location = new System.Drawing.Point(12, 45);
+            this.listBoxLogs.Name = "listBoxLogs";
+            this.listBoxLogs.Size = new System.Drawing.Size(558, 238);
+            this.listBoxLogs.TabIndex = 0;
+            this.listBoxLogs.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ListBoxLogs_MouseDoubleClick);
             // 
             // label1
             // 
@@ -57,7 +57,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 295);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ListBoxLogs);
+            this.Controls.Add(this.listBoxLogs);
             this.Name = "HistoryForm";
             this.Text = "HistoryForm";
             this.Load += new System.EventHandler(this.HistoryForm_Load);
@@ -68,7 +68,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox ListBoxLogs;
+        private System.Windows.Forms.ListBox listBoxLogs;
         private System.Windows.Forms.Label label1;
     }
 }

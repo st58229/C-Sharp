@@ -21,12 +21,12 @@ namespace Cshrp_Semestralni_prace
 
             driveInfos.ForEach(i =>
             {
-                ComboBoxDriveLeft.Items.Add(i.Name);
-                ComboBoxDriveRight.Items.Add(i.Name);
+                comboBoxDriveLeft.Items.Add(i.Name);
+                comboBoxDriveRight.Items.Add(i.Name);
             });
 
-            ComboBoxDriveLeft.SelectedIndex = 0;
-            ComboBoxDriveRight.SelectedIndex = 0;
+            comboBoxDriveLeft.SelectedIndex = 0;
+            comboBoxDriveRight.SelectedIndex = 0;
 
             driveLeft = driveInfos[0].Name;
             driveRight = driveInfos[0].Name;
@@ -36,17 +36,17 @@ namespace Cshrp_Semestralni_prace
         {
             if (isLeft)
             {
-                if (!reloadPath) pathLeft = PathtextBoxLeft.Text;
+                if (!reloadPath) pathLeft = pathtextBoxLeft.Text;
                 fullPathLeft = driveLeft + pathLeft;
-                PathtextBoxLeft.Text = pathLeft;
-                LoadDirectory(listViewLeft, DetailsBoxLeft, fullPathLeft, selectedFileLeft, ref isFileLeft);
+                pathtextBoxLeft.Text = pathLeft;
+                LoadDirectory(listViewLeft, detailsBoxLeft, fullPathLeft, selectedFileLeft, ref isFileLeft);
             }
             else 
             {
-                if (!reloadPath) pathRight = PathtextBoxRight.Text;
+                if (!reloadPath) pathRight = pathtextBoxRight.Text;
                 fullPathRight = driveRight + pathRight;
-                PathtextBoxRight.Text = pathRight;
-                LoadDirectory(listViewRight, DetailsBoxRight, fullPathRight, selectedFileRight, ref isFileRight);
+                pathtextBoxRight.Text = pathRight;
+                LoadDirectory(listViewRight, detailsBoxRight, fullPathRight, selectedFileRight, ref isFileRight);
             }
         }
 
@@ -109,13 +109,13 @@ namespace Cshrp_Semestralni_prace
 
                 if (isLeft)
                 {
-                    Back(BackButtonLeft, PathtextBoxLeft, ref isFileLeft);
-                    pathLeft = PathtextBoxLeft.Text;
+                    Back(backButtonLeft, pathtextBoxLeft, ref isFileLeft);
+                    pathLeft = pathtextBoxLeft.Text;
                 }
                 else
                 {
-                    Back(BackButtonRight, PathtextBoxRight, ref isFileRight);
-                    pathRight = PathtextBoxRight.Text;
+                    Back(backButtonRight, pathtextBoxRight, ref isFileRight);
+                    pathRight = pathtextBoxRight.Text;
                 }
             }
         }       
@@ -150,14 +150,14 @@ namespace Cshrp_Semestralni_prace
 
         private void LoadFileDetails(string tempFilePath, RichTextBox richTextBox)
         {
-            FileInfo filedetails = new FileInfo(tempFilePath);
+            FileInfo fileDetails = new FileInfo(tempFilePath);
             StringBuilder details = new StringBuilder();
-            details.AppendLine("Name:\t\t" + filedetails.Name);
-            details.AppendLine("Directory:\t\t" + filedetails.DirectoryName);
-            details.AppendLine("Created:\t\t" + filedetails.CreationTimeUtc);
-            details.AppendLine("Last acces:\t" + filedetails.LastAccessTimeUtc);
-            details.AppendLine("Last write:\t" + filedetails.LastWriteTimeUtc);
-            details.AppendLine("Size:\t\t" + ConvertSize(filedetails.Length));
+            details.AppendLine("Name:\t\t" + fileDetails.Name);
+            details.AppendLine("Directory:\t\t" + fileDetails.DirectoryName);
+            details.AppendLine("Created:\t\t" + fileDetails.CreationTimeUtc);
+            details.AppendLine("Last acces:\t" + fileDetails.LastAccessTimeUtc);
+            details.AppendLine("Last write:\t" + fileDetails.LastWriteTimeUtc);
+            details.AppendLine("Size:\t\t" + ConvertSize(fileDetails.Length));
 
             richTextBox.Text = details.ToString();
         }        
@@ -191,7 +191,7 @@ namespace Cshrp_Semestralni_prace
 
             if (textBox.Text == "") return;
 
-            bool isLeft = sender == BackButtonLeft;
+            bool isLeft = sender == backButtonLeft;
             string path =  isLeft ? pathLeft : pathRight;
             string drive = isLeft ? driveLeft : driveRight;
 
@@ -284,16 +284,16 @@ namespace Cshrp_Semestralni_prace
             }
         }
 
-        private void MoveFile(string dirPath, ref string selectedfile, string newPath)
+        private void MoveFile(string dirPath, ref string selectedFile, string newPath)
         {
-            if (dirPath.Equals("") || dirPath == null || selectedfile.Equals("") || selectedfile == null) return;
+            if (dirPath.Equals("") || dirPath == null || selectedFile.Equals("") || selectedFile == null) return;
 
             try
             {
-                FileInfo temp = new FileInfo(dirPath+@"\"+selectedfile);
+                FileInfo temp = new FileInfo(dirPath+@"\"+selectedFile);
 
-                temp.MoveTo(newPath+@"\"+selectedfile);                
-                selectedfile = "";
+                temp.MoveTo(newPath+@"\"+selectedFile);                
+                selectedFile = "";
 
                 isFileLeft = false;
                 RefreshSide(true, true);
@@ -340,13 +340,13 @@ namespace Cshrp_Semestralni_prace
                 if (isDrive) driveLeft = fullPath;
                 else driveLeft = fullPath.Substring(0, fullPath.IndexOf(@"\") + 1);
 
-                ComboBoxDriveLeft.SelectedItem = driveLeft;
+                comboBoxDriveLeft.SelectedItem = driveLeft;
 
                 fullPathLeft = fullPath;
 
                 if (fullPath != driveLeft) pathLeft = fullPath.Substring(fullPath.IndexOf(@"\"));
                 else pathLeft = "";
-                PathtextBoxLeft.Text = pathLeft;
+                pathtextBoxLeft.Text = pathLeft;
 
                 RefreshSide(true, false);
             }
@@ -357,13 +357,13 @@ namespace Cshrp_Semestralni_prace
                 if (isDrive) driveRight = fullPath;
                 else driveRight = fullPath.Substring(0, fullPath.IndexOf(@"\") + 1);
 
-                ComboBoxDriveRight.SelectedItem = driveRight;
+                comboBoxDriveRight.SelectedItem = driveRight;
 
                 fullPathRight = fullPath;
 
                 if (fullPath != driveRight) pathRight = fullPath.Substring(fullPath.IndexOf(@"\"));
                 else pathRight = "";
-                PathtextBoxRight.Text = pathRight;
+                pathtextBoxRight.Text = pathRight;
 
                 RefreshSide(false, false);
             }
@@ -373,11 +373,11 @@ namespace Cshrp_Semestralni_prace
         
         private void TextBoxEnterHandler(object sender, KeyPressEventArgs e)
         {
-            bool isLeft = sender == PathtextBoxLeft;
+            bool isLeft = sender == pathtextBoxLeft;
 
             if (e.KeyChar == (char)Keys.Enter)
             {
-                string path = isLeft ? driveLeft + PathtextBoxLeft.Text : driveRight + PathtextBoxRight.Text; ;
+                string path = isLeft ? driveLeft + pathtextBoxLeft.Text : driveRight + pathtextBoxRight.Text; ;
 
                 if (!Directory.Exists(path))
                 {
@@ -388,14 +388,14 @@ namespace Cshrp_Semestralni_prace
 
                 if (isLeft)
                 { 
-                    pathLeft = PathtextBoxLeft.Text;
+                    pathLeft = pathtextBoxLeft.Text;
                     isFileLeft = false;
                     selectedFileLeft = "";
                     RefreshSide(true, false);
                 }
                 else
                 {
-                    pathRight = PathtextBoxRight.Text;
+                    pathRight = pathtextBoxRight.Text;
                     isFileRight = false;
                     selectedFileRight = "";
                     RefreshSide(false, false);
@@ -405,7 +405,7 @@ namespace Cshrp_Semestralni_prace
         
         private void OpenHistoryDialog(object sender, EventArgs e)
         {
-            string logFile = sender == HistoryMenuItemLeft ? LogFileLeft : LogFileRight;            
+            string logFile = sender == historyMenuItemLeft ? LogFileLeft : LogFileRight;            
 
             HistoryForm dialog = new HistoryForm(logFile);
             dialog.ShowDialog();
@@ -422,13 +422,13 @@ namespace Cshrp_Semestralni_prace
                 if (isDrive) driveLeft = fullPath;
                 else driveLeft = fullPath.Substring(0, fullPath.IndexOf(@"\") + 1);
 
-                ComboBoxDriveLeft.SelectedItem = driveLeft;
+                comboBoxDriveLeft.SelectedItem = driveLeft;
 
                 fullPathLeft = fullPath;
 
                 if (fullPath != driveLeft) pathLeft = fullPath.Substring(fullPath.IndexOf(@"\"));
                 else pathLeft = "";
-                PathtextBoxLeft.Text = pathLeft;
+                pathtextBoxLeft.Text = pathLeft;
 
                 RefreshSide(true, false);
             }
@@ -439,13 +439,13 @@ namespace Cshrp_Semestralni_prace
                 if (isDrive) driveRight = fullPath;
                 else driveRight = fullPath.Substring(0, fullPath.IndexOf(@"\") + 1);
 
-                ComboBoxDriveRight.SelectedItem = driveRight;
+                comboBoxDriveRight.SelectedItem = driveRight;
 
                 fullPathRight = fullPath;
 
                 if (fullPath != driveRight) pathRight = fullPath.Substring(fullPath.IndexOf(@"\"));
                 else pathRight = "";
-                PathtextBoxRight.Text = pathRight;
+                pathtextBoxRight.Text = pathRight;
 
                 RefreshSide(false, false);
             }
@@ -453,7 +453,7 @@ namespace Cshrp_Semestralni_prace
         
         private void RefreshDriveSelection(object sender, EventArgs e)
         {
-            bool isLeft = sender == ComboBoxDriveLeft;
+            bool isLeft = sender == comboBoxDriveLeft;
 
             List<DriveInfo> driveInfos = DriveInfo.GetDrives().ToList();
 
@@ -469,7 +469,7 @@ namespace Cshrp_Semestralni_prace
 
             if (isLeft)
             { 
-                PathtextBoxLeft.Text = "";
+                pathtextBoxLeft.Text = "";
                 driveLeft = ((ComboBox)sender).SelectedItem.ToString();
                 pathLeft = "";
                 selectedFileLeft = "";
@@ -478,7 +478,7 @@ namespace Cshrp_Semestralni_prace
             }
             else
             { 
-                PathtextBoxRight.Text = "";
+                pathtextBoxRight.Text = "";
                 driveRight = ((ComboBox)sender).SelectedItem.ToString();
                 pathRight = "";
                 selectedFileRight = "";
@@ -489,7 +489,7 @@ namespace Cshrp_Semestralni_prace
 
         private void CleanHistory(object sender, EventArgs e)
         {
-            bool isLeft = sender == CleanMenuItemLeft;
+            bool isLeft = sender == cleanMenuItemLeft;
             string logFile = isLeft ? LogFileLeft : LogFileRight; 
 
             FileInfo history = new FileInfo(logFile);
